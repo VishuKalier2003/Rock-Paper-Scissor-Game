@@ -1,0 +1,71 @@
+@import "tailwindcss/base";
+@import "tailwindcss/utilities";
+@import "tailwindcss/components";
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Caveat&display=swap');
+
+.user-font {
+    font-family: 'Caprasimo', cursive; font-weight: 100;
+}
+
+.button-font {
+    font-family: 'Caveat', cursive; font-weight: 100;
+}
+
+.player-gradient {
+    background-image: linear-gradient(to bottom left, rgb(255, 255, 255), rgb(255, 25, 25), rgb(155, 30, 60));
+}
+
+.computer-gradient {
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(25, 25, 255), rgb(60, 30, 155));
+}
+
+.player-button {
+    background-image : radial-gradient(rgb(255, 0, 0), rgb(155, 30, 60));
+    border-radius: 10px; backdrop-filter: blur(20px); color: whitesmoke;
+}
+
+.player-div-gradient {
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(255, 25, 25), rgb(155, 30, 60));
+    position: relative; transform: translateX(-700px); z-index: 12;
+}
+
+.computer-div-gradient {
+    background-image: linear-gradient(to bottom left, rgb(255, 255, 255), rgb(25, 25, 255), rgb(60, 30, 155));
+    position: relative; transform: translateX(700px); z-index: 12;
+}
+
+.computer-button {
+    background-image : radial-gradient(rgb(0, 0, 255), rgb(60, 30, 155));
+    border-radius: 10px; backdrop-filter: blur(20px); color: whitesmoke;
+}
+
+.score {
+    border-radius: 1rem; background-image: linear-gradient(to right, rgb(10, 200, 90), rgb(40, 224, 50));
+}
+
+@keyframes buttonGlow {
+    0% {box-shadow: 0px 0px 5px 5px rgb(10, 200, 90);}
+    50% {box-shadow: 0px 0px 8px 8px rgb(40, 224, 50);}
+    100% {box-shadow: 0px 0px 5px 5px rgb(10, 200, 90);}
+}
+
+@keyframes stop {
+    0% {box-shadow: 0px 0px 5px 5px rgb(155, 30, 60);}
+    50% {box-shadow: 0px 0px 8px 8px rgb(225, 25, 25);}
+    100% {box-shadow: 0px 0px 5px 5px rgb(155, 30, 60);}
+}
+
+.btn:focus {
+    letter-spacing: 4px; font-size: 40px; line-height: 44px; transition-duration: 1s;
+    box-shadow: 0px 0px 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+.pos {
+    position: relative; top: 75vh; left: 90vw;
+}
+
+.move-up {
+    position: relative; transform: translateY(-700px);
+}
